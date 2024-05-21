@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactForm.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="containerformz">
+      <span class="big-circle"></span>  
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Let's connect and bring your construction projects to life together.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+
+              <p>49 Sta Catalina St, Dumaguete City, Philippines</p>
+            </div>
+            <div class="information">
+              <i class="fas fa-envelope"></i> &nbsp &nbsp
+              <a href="mailto:glubrosdevtcorp@gmail.com" target="_blank" style="text-decoration: none; color: #12372A;" onmouseover="this.style.color='green'" onmouseout="this.style.color='#12372A'">glubrosdevtcorp@gmail.com</a>
+            </div>
+            <div class="information">
+              <i class="fas fa-phone"></i>&nbsp&nbsp
+              <p>(035) 225 4717</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-formz">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form id="contact-form" onsubmit="submitForm(event)" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              
+              <label >Name</label>
+              <input type="text" name="name" class="input" required />
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              
+              <label >Email</label>
+              <input type="email" name="email" class="input" required />
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              
+              <label >Subject</label>
+              <input type="text" name="subject" class="input" required />
+              <span>Subjet</span>
+            </div>
+            <div class="input-container textarea">
+              
+              <label >Message</label>
+              <textarea name="message" class="input"></textarea>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Submit" class="btn" required />
+          </form>
+
+          <div id="message-notification" style="text-align: center;"></div>
+        </div>
+      </div>
+    </div>
+
+        <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form data
+            var formData = new FormData(document.getElementById('contact-form'));
+
+            // Send form data via AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'send_email.php', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById('message-notification').innerHTML = '<p style="color: green; font-weight: 400;">Message has been sent successfully! Refresh page to send another message.</p>';
+                        document.getElementById('contact-form').reset(); // Clear form fields
+                    } else {
+                        document.getElementById('message-notification').innerHTML = '<p style="color: #cc0000; font-weight: 400;">Message could not be sent. Refresh page and try again.</p>';
+                    }
+                }
+            };
+            xhr.send(formData);
+        }
+    </script>
+
+    <script src="contactForm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+
+.map-container{
+  border: 3px solid #106835;
+}
+
+    .LetsconnSec{
+      display: flex;
+       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1%;
+      margin-top: 3%;
+    }
+
+    .LetsconnSec h3{
+      display: flex;
+        color: #12372A;
+        font-size: 1.8rem; 
+        font-family: 'Raleway', sans-serif;   
+        white-space: nowrap;
+        font-weight: 700;
+        padding-bottom: 14px; /* Adjusted padding */
+        width: 200px; /* Adjusted width to make the line shorter */
+        justify-content: space-evenly;
+        letter-spacing: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .name{
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+
+  .sidebarz {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon-containerz {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 15px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .name {
+    margin-right: 20px;
+  }
