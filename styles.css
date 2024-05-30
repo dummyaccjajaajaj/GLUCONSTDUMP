@@ -262,7 +262,7 @@ section {
 }
 
 .menu-toggle.open .bar:nth-child(1) {
- transform: rotate(-40deg) translate(-5px, 6px);
+ transform: rotate(-40deg) translate(1px, 9px);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
@@ -270,7 +270,7 @@ section {
 }
 
 .menu-toggle.open .bar:nth-child(3) {
- transform: rotate(40deg) translate(-5px, -6px);
+ transform: rotate(40deg) translate(1px, -9px);
 }
 
                                                                                               /* HOMEPAGE DESIGNS DESKTOP */
@@ -422,8 +422,6 @@ section {
  text-align: center;
  flex-direction: column;
 }
-
-
 
 .photos-container {
  display: flex;
@@ -607,7 +605,6 @@ section {
  text-align: center;
  flex-direction: column;
 }
-
 
 
 .projectsN {
@@ -1014,7 +1011,6 @@ footer .social a {
  font-size: 1.3rem;
  color: inherit;
  width: 40px;
- height: 40px;
  line-height: 38px;
  display: inline-block;
  text-align: center;
@@ -1025,7 +1021,6 @@ footer .social a {
 footer .social a:hover {
  opacity: 0.75;
  color: #1d613c;
- transition: 0.1s ease-in-out;
 }
 
 footer ul {
@@ -1052,7 +1047,7 @@ footer ul li {
 
 footer ul a:hover {
  color: green;
- transition: 0.1s ease-in-out;
+ transition: 0.2s ease-in-out;
 }
 
 footer .copyright {
@@ -1062,49 +1057,23 @@ footer .copyright {
  color: white;
 }
 
-.fa-facebook-f {
- color: #4267b2;
+.fab.fa-linkedin-in {
+    color: #0077b5;
+  }
+
+.gmail {
+    height: 0.9rem;
+    width: auto;
 }
 
-.fa-google {
- background: conic-gradient(
-   from -45deg,
-   #ea4335 110deg,
-   #4285f4 90deg 180deg,
-   #34a853 180deg 270deg,
-   #fbbc05 270deg
-  )
-  73% 55%/150% 150% no-repeat;
- -webkit-background-clip: text;
- background-clip: text;
- color: transparent;
- -webkit-text-fill-color: transparent;
+.instagram {
+    height: 1.2rem;
+    width: auto;
 }
 
-.fa-twitter {
- color: #1da1f2;
-}
-
-.fa-instagram {
- color: transparent;
- background: radial-gradient(
-  circle at 30% 107%,
-  #fdf497 0%,
-  #fdf497 5%,
-  #fd5949 45%,
-  #d6249f 60%,
-  #285aeb 90%
- );
- background: -webkit-radial-gradient(
-  circle at 30% 107%,
-  #fdf497 0%,
-  #fdf497 5%,
-  #fd5949 45%,
-  #d6249f 60%,
-  #285aeb 90%
- );
- background-clip: text;
- -webkit-background-clip: text;
+.facebook {
+    height: 1.2rem;
+    width: auto;
 }
 
                                                                                               /* Back to Top Button Styles */
@@ -1278,7 +1247,7 @@ footer .copyright {
  }
 
  .nav-list a {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 15px;
  }
 
@@ -1608,6 +1577,7 @@ footer .copyright {
   font-size: 1rem;
  }
 
+
  .sidebar {
   flex-direction: column;
   align-items: flex-start;
@@ -1636,6 +1606,7 @@ footer .copyright {
   line-height: 1;
   margin-bottom: 0;
  }
+
 
  footer ul li a {
   font-size: 12px;

@@ -20,7 +20,6 @@ header {
  width: 100%;
  height: 55px;
  margin: 0;
-
  background-color: transparent;
  color: #fff;
  text-align: center;
@@ -248,7 +247,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .menu-toggle.open .bar:nth-child(1) {
- transform: rotate(-40deg) translate(-5px, 6px);
+ transform: rotate(-40deg) translate(1px, 9px);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
@@ -256,7 +255,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .menu-toggle.open .bar:nth-child(3) {
- transform: rotate(40deg) translate(-5px, -6px);
+ transform: rotate(40deg) translate(1px, -9px);
 }
 
                                                                                                /* SERVICES TITLES AND BACKGROUNDS */
@@ -477,7 +476,6 @@ nav.stroke ul li a:hover:after {
  text-align: center;
  flex-direction: column;
 }
-
 
 
 .projectsN {
@@ -791,7 +789,6 @@ a:is(:hover, :focus) figcaption {
 footer {
  position: relative;
  height: auto;
- background-color: #a5b699;
  bottom: 0;
  left: 0;
  width: auto;
@@ -827,7 +824,6 @@ footer .social a {
  font-size: 1.3rem;
  color: inherit;
  width: 40px;
- height: 40px;
  line-height: 38px;
  display: inline-block;
  text-align: center;
@@ -836,9 +832,8 @@ footer .social a {
 }
 
 footer .social a:hover {
- opacity: 0.5;
+ opacity: 0.75;
  color: #1d613c;
- transition: 0.1s ease-in-out;
 }
 
 footer ul {
@@ -865,7 +860,7 @@ footer ul li {
 
 footer ul a:hover {
  color: green;
- transition: 0.1s ease-in-out;
+ transition: 0.2s ease-in-out;
 }
 
 footer .copyright {
@@ -875,52 +870,27 @@ footer .copyright {
  color: white;
 }
 
-.fa-facebook-f {
- color: #4267b2;
+.fab.fa-linkedin-in {
+    color: #0077b5;
+  }
+
+.gmail {
+    height: 0.9rem;
+    width: auto;
 }
 
-.fa-google {
- background: conic-gradient(
-   from -45deg,
-   #ea4335 110deg,
-   #4285f4 90deg 180deg,
-   #34a853 180deg 270deg,
-   #fbbc05 270deg
-  )
-  73% 55%/150% 150% no-repeat;
- -webkit-background-clip: text;
- background-clip: text;
- color: transparent;
- -webkit-text-fill-color: transparent;
+.instagram {
+    height: 1.2rem;
+    width: auto;
 }
 
-.fa-twitter {
- color: #1da1f2;
+.facebook {
+    height: 1.2rem;
+    width: auto;
 }
 
-.fa-instagram {
- color: transparent;
- background: radial-gradient(
-  circle at 30% 107%,
-  #fdf497 0%,
-  #fdf497 5%,
-  #fd5949 45%,
-  #d6249f 60%,
-  #285aeb 90%
- );
- background: -webkit-radial-gradient(
-  circle at 30% 107%,
-  #fdf497 0%,
-  #fdf497 5%,
-  #fd5949 45%,
-  #d6249f 60%,
-  #285aeb 90%
- );
- background-clip: text;
- -webkit-background-clip: text;
-}
 
-                                                                                               /* Back to Top Button Styles */
+                                                                                              /* BACK TO TOP BUTTON STYLES */
 #back-to-top {
  position: fixed;
  bottom: 20px;
@@ -935,9 +905,11 @@ footer .copyright {
  cursor: pointer;
  transition: opacity 0.3s ease, right 0.3s ease;
 }
+
 #back-to-top:hover {
  background-color: #333;
 }
+
 #back-to-top span {
  position: absolute;
  top: 50%;
@@ -1088,7 +1060,7 @@ footer .copyright {
  }  
 
  .nav-list a {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 15px;
  }
 
@@ -1149,9 +1121,6 @@ footer .copyright {
 
                                                                                                 /* LET'S CONNECT */
 
-
-
-                                                                                                
 
  .sidebar {
   flex-direction: column;
@@ -1215,3 +1184,5 @@ footer .copyright {
   height: auto;
  }
 }
+
+

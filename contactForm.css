@@ -44,10 +44,7 @@
 }
 
 .circle.one {
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
+  display: none;
 }
 
 .circle.two {
@@ -183,13 +180,15 @@ textarea.input {
 }
 
 .notif {
-    background-color: white; 
-    border: 1px solid #ccc;
+    display: none;
+    border: 2px solid white;
     margin: 30px auto;
-    width: 85%; 
+    width: 90%; 
     text-align: center; 
     border-radius: 10px;
     transition: 2s ease-out;
+    padding-top: 40%;
+    padding-bottom: 40%;
 }
 
 .input-container.focus label {
@@ -306,6 +305,16 @@ textarea.input {
     grid-template-columns: 1fr;
   }
 
+  .notif {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.circle.two {
+  display: none;
+}
+
+
   .contact-info:before {
     bottom: initial;
     top: -75px;
@@ -318,8 +327,6 @@ textarea.input {
     left: initial;
     right: 70px;
   }
-
-
 
   .big-circle {
     bottom: 75%;

@@ -1,4 +1,4 @@
-      //BACK TO TOP BUTTON
+    //BACK TO TOP BUTTON
     // Get the back to top button element
     var backToTopButton = document.getElementById("back-to-top");
 

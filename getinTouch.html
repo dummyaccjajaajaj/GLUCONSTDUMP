@@ -126,13 +126,13 @@
             <p>Connect with us :</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/glujr">
-                <i class="fab fa-facebook-f"></i>
+                <center> <img src="contactIcons/facebook_icon.svg" class="facebook"  alt="Logo" style="transition: none; transform: none;"> </center>
               </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
+              <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+              <a href="https://www.instagram.com/">
+                <center> <img src="contactIcons/instagram_logo.svg" class="instagram"  alt="Logo" style="transition: none; transform: none;"> </center>
               </a>
             </div>
           </div>
@@ -171,33 +171,36 @@
             <input type="submit" value="Submit" class="btn" />
           </form>
 
-          <div id="message-notification" class="notif" style="text-align: center;"></div>
+          <center><div id="message-notification" class="notif" style="text-align: center;"></div></center>
         </div>
       </div>
     </div>
 
         <script>
         function submitForm(event) {
-            event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); // Prevent default form submission
 
-            // Get form data
-            var formData = new FormData(document.getElementById('contact-form'));
+        // Get form data
+        var formData = new FormData(document.getElementById('contact-form'));
 
-            // Send form data via AJAX
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'send_email.php', true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        document.getElementById('message-notification').innerHTML = '<p style="color: green; font-weight: 400;">Message has been sent successfully! Refresh page to send another message.</p>';
-                        document.getElementById('contact-form').reset(); // Clear form fields
-                    } else {
-                        document.getElementById('message-notification').innerHTML = '<p style="color: #cc0000; font-weight: 400;">Message could not be sent. Refresh page and try again.</p>';
-                    }
-                }
-            };
-            xhr.send(formData);
-        }
+        // Send form data via AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'send_email.php', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                var notification = document.getElementById('message-notification');
+                notification.style.display = 'block';
+                if (xhr.status === 200) {
+                    notification.innerHTML = '<p style="color: white; font-weight: 700; font-size: 1.3rem;">Thank you for reaching out! We will get back to you soon.</p>';
+                } else {
+                    notification.innerHTML = '<p style="color: white; font-weight: 700; font-size: 1.3rem;">We encountered an error. Please refresh the page and try again.</p>';
+                }   
+                // Hide the form after submission
+                document.getElementById('contact-form').style.display = 'none';
+            }
+        };
+        xhr.send(formData);
+    }
         </script>
         </section>
 
@@ -232,20 +235,20 @@
                 </li>
             </ul>
             <div>
-                <h5 style="margin-top: 25px; font-weight: 600; margin-bottom: 10px; color: white;">FOLLOW US ON</h5>
+                <h5 style="margin-top: 25px; font-weight: 600; margin-bottom: 10px; color: white;">GET IN TOUCH</h5>
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/glujr">
-                    <i class="fab fa-facebook-f"></i>
+                    <center> <img src="contactIcons/facebook_icon.svg" class="facebook"  alt="Logo" style="transition: none; transform: none;"> </center>
                 </a>
                 <a href="mailto:glubrosdevtcorp@gmail.com" target="_blank" style="text-decoration: none;">
-                    <i class="fab fa-google"></i>
+                    <center> <img src="contactIcons/Gmail_Logo.svg" class="gmail"  alt="Logo" style="transition: none; transform: none;"> </center>     
                 </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/">
+                    <center> <img src="contactIcons/instagram_logo.svg" class="instagram"  alt="Logo" style="transition: none; transform: none;"> </center>
                 </a>
             </div>
             <p class="copyright">2024 │ G. UYMATIAO JR. CONSTRUCTION</p>
