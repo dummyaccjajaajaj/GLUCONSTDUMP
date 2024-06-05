@@ -1120,19 +1120,8 @@ footer .copyright {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* FOR MOBILE VIEW */
-
-@media screen and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
  /* 768px , 1024px , 1124px */
 
                                                                                                /* HEADER / NAVIGATIONS MOBILE */

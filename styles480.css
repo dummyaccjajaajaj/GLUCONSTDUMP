@@ -1,0 +1,487 @@
+
+@media (max-width: 480px) {
+
+  .kkk {
+  display: none;
+ }
+ .logoname {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+ }
+ .logo {
+  border-right: none;
+ }
+
+ .left {
+  margin-top: -30px;
+ }
+
+ header {
+  height: 30px;
+  padding: 10px;
+ }
+
+ #header.hidden {
+    top: -45px; /* Adjust this value to match the height of your header */
+}
+
+ #logo {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+ }
+
+ .vertical-line {
+  height: 50px;
+  border-left: 3px solid white;
+  margin: 0 20px;
+ }
+
+ .container {
+  display: flex;
+  background-color: transparent;
+  margin-top: -15px;
+ }
+
+ h2 {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+ }
+
+ .disappear {
+  font-size: 8px;
+  display: none;
+  font-family: "Raleway", sans-serif;
+ }
+
+ .containerIN {
+  margin-top: 14px;
+  margin-left: 0px;
+ }
+
+ .navbar-body {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+ }
+
+ .navbar-body.show {
+  display: flex;
+ }
+
+ .stroke {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row-reverse;
+ }
+
+ /* BACKGROUND IMAGE IN EACH SECTION FOR MOBILE*/
+
+ .right {
+  justify-content: space-between;
+ }
+
+ .nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 83%;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 2rem;
+  align-items: flex-end;
+  top: 100%;
+  right: 11%;
+
+ }
+
+ .nav-list.show {
+  max-height: 300px;
+  line-height: 2rem;
+ }
+
+ .nav-list li {
+  margin-right: 0;
+ }
+
+ .nav-list a {
+  font-weight: 500;
+  font-size: 15px;
+ }
+
+ .menu-toggle {
+  display: flex;
+  order: 1;
+ }
+
+ nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+ }
+
+ nav a.active,
+ nav a.black {
+  color: black;
+ }
+
+ img {
+  height: auto;
+  display: block;
+ }
+
+                                                                                               /* HOMEPAGE DESIGNS MOBILE */
+
+ .HOMEPAGEsect {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+ }
+
+ /* HOMEPAGE OVERLAY IMAGE */
+ .homepageOverlayimg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .homepageOverlayimg img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+ }
+
+ /* OVERLAY TEXT IN HOMEPAGE */
+ .homeN {
+  position: absolute;
+  margin-top: 0px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+ }
+
+ .companyName {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 850;
+ }
+
+ .homeD {
+  position: absolute;
+  margin-top: 10px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+ }
+
+ .navbar {
+  margin-top: 30px;
+ }
+
+                                                                                               /* SERVICES DESIGNS MOBILE */
+
+ .photo {
+  margin: 10px;
+  text-align: center;
+  margin: 20px;
+  text-align: center;
+ }
+
+ .photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 360px;
+ }
+
+ .servicesN {
+  margin-bottom: 20px;
+  color: #12372a;
+  position: absolute;
+  margin-top: 100px;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  font-weight: 800;
+ }
+
+ .servicesDesc {
+  color: #12372a;
+  font-family: "Raleway", sans-serif;
+  white-space: normal;
+ }
+
+ .servcND {
+  margin-bottom: 20px;
+  color: #12372a;
+  position: absolute;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  white-space: normal;
+  width: 90%;
+ }
+
+ .jsborder {
+  border-radius: 10px;
+  font-size: 0.9rem;
+  border: solid 2px black;
+ }
+
+                                                                                               /* COMPANY HIGHLIGHTS */
+
+ .compHighlights {
+  height: auto;
+ }
+
+ .horizontalSec {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+ }
+
+ .hh {
+  margin: 0%;
+ }
+
+ .hh h1 {
+  font-size: 3rem;
+ }
+
+ .hh h3 {
+  font-size: 1rem;
+ }
+
+                                                                                               /* OUR PROJECTS DESIGNS MOBILE */
+
+ .projectsN {
+  margin-bottom: 20px;
+  color: #12372a;
+  position: absolute;
+  margin-top: 100px;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 800;
+ }
+
+ .nav-ulz {
+  margin-top: 390px;
+ }
+
+ .projND {
+  width: 90%;
+  margin-bottom: 20px;
+  color: #12372a;
+  position: absolute;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  white-space: normal;
+ }
+
+                                                                                               /* ABOUT US DESIGNS MOBILE */
+
+ #left-section,
+ #right-section {
+  flex: 100%;
+ }
+
+ #left-section {
+  margin-left: 0%;
+ }
+
+ #left-section img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+ }
+
+ #left-section h2 {
+  margin-top: 120px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  white-space: normal;
+  font-weight: 800;
+  padding-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+ }
+
+ .Aboutsideimage {
+  margin-top: 0px;
+ }
+
+ #right-section .logoName {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  align-items: flex-end;
+ }
+
+ #right-section img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin-right: 10px;
+ }
+
+ #right-section {
+  margin-top: 10px;
+  margin: 0%;
+  padding-bottom: 20%;
+ }
+
+ #right-section {
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+
+ #right-section p {
+  margin-top: 10px;
+  color: white;
+  font-size: 0.9rem;
+ }
+
+ #right-section .logoName p {
+  color: #12372a;
+  font-size: 1rem;
+  font-weight: 500;
+  display: contents;
+ }
+
+ .letsConnectBTN {
+  margin-right: 0%;
+ }
+
+                                                                                               /* CONTACT US DESIGNS MOBILE */
+
+ .CONTACTUSsect {
+  padding: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+ }
+
+ #upSec h2 {
+  color: #12372a;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+  font-weight: 800;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+ }
+
+ #upSec p {
+  color: #12372a;
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 400;
+  margin: 5px 5% 2.5% 5%;
+  line-height: 1.5rem;
+  padding-bottom: 30px;
+ }
+
+                                                                                               /* LET'S CONNECT */
+
+ .contactDetails h3 {
+  font-size: 1rem;
+ }
+
+
+ .sidebar {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .icon {
+ width: 15px;
+ height: 15px;
+  margin-left: 5px;
+ }
+
+ .icon-container {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+ }
+
+                                                                                               /* FOOTER */
+
+ footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  margin-bottom: 0;
+ }
+
+
+ footer ul li a {
+  font-size: 12px;
+ }
+
+ .fLogo img {
+  width: 65%;
+  height: auto;
+ }
+
+
+
+}
