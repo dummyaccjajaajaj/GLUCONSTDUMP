@@ -6,7 +6,7 @@ document.addEventListener("scroll", function() {
 
       if (scrollPosition >= section2.offsetTop) {
         // If scrolled down to or past section 2, change header color to pale yellow green
-        header.style.backgroundColor = "#A5B699";
+        header.style.backgroundColor = "#4AA15A";
         header.style.boxShadow = "0 0 20px rgba(0, 0, 0, 1)";
       } else {
         // Otherwise, keep the default color (dark green)

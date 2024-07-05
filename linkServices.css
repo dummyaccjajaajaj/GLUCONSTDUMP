@@ -738,7 +738,7 @@ a:is(:hover, :focus) figcaption {
  align-items: center;
  justify-content: center;
  padding: 1%;
- background: url('backgroundImgs/conNectbg4.png');
+ background: url('backgroundImgs/conNectbg1.png');
   background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
@@ -750,7 +750,7 @@ a:is(:hover, :focus) figcaption {
  font-size: 1.3rem;
  font-family: "Raleway", sans-serif;
  white-space: nowrap;
- font-weight: 700;
+ font-weight: 600;
  padding-bottom: 14px;
  width: 200px;
  justify-content: space-evenly;
@@ -759,7 +759,7 @@ a:is(:hover, :focus) figcaption {
 
 .name {
  font-size: 0.9rem;
- font-weight: 600;
+ font-weight: 500;
  color: black;
 }
 
@@ -797,7 +797,7 @@ footer {
 
 footer {
  padding-bottom: 10px;
- background-color: #a5b699;
+ background-color: #7CC475; 
 }
 
 .fLogo {
@@ -918,6 +918,16 @@ footer .copyright {
 }
 
 
+/*  SCROLLBAR STYLES - HEADER COLOR */
+::-webkit-scrollbar {
+    width: 15px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #4AA15A; 
+    border: 3px solid #4AA15A; 
+}
 
 
 

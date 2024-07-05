@@ -2,11 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=League Spartan:400,500,600,700,800,900");
 
 /*
+#ACDD8E
+#FAFDCE
+
+#e8e9eb
 #106835
 #a5b699
 #ffffff
 #1abc9c
 #fafafa
+#7CC475
+#4AA15A
 */
 
                                                                                               /* BODY, HEADER DESIGNS */
@@ -490,6 +496,11 @@ section {
  background-color: white;
 }
 
+.photo:hover{
+  transition: 0.5s;
+  border: 1.5px solid white;
+}
+
 .hover-text {
  position: absolute;
  bottom: 0;
@@ -927,7 +938,7 @@ a:is(:hover, :focus) figcaption {
  align-items: center;
  justify-content: center;
  padding: 1%;
- background: url('backgroundImgs/conNectbg4.png');
+ background: url('backgroundImgs/conNectbg1.png');
   background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
@@ -939,14 +950,14 @@ a:is(:hover, :focus) figcaption {
  font-size: 1.3rem;
  font-family: "Raleway", sans-serif;
  white-space: nowrap;
- font-weight: 700;
+ font-weight: 600;
  justify-content: space-evenly;
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .name {
  font-size: 0.9rem;
- font-weight: 600;
+ font-weight: 500;
  color: black;
 }
 
@@ -984,7 +995,7 @@ footer {
 
 footer {
  padding-bottom: 10px;
- background-color: #a5b699;
+ background-color: #7CC475;
 }
 
 .fLogo {
@@ -1104,13 +1115,16 @@ footer .copyright {
 }
 
 
+/*  SCROLLBAR STYLES - HEADER COLOR */
+::-webkit-scrollbar {
+    width: 10px; 
+}
 
 
-
-
-
-
-
+::-webkit-scrollbar-thumb {
+    background-color: #4AA15A; 
+    border: 3px solid #4AA15A; 
+}
 
 
 

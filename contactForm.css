@@ -33,13 +33,13 @@
 }
 
 .contact-formz {
-  background-color: #A5B699;
+  background-color: #7CC475;;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #4AA15A);
   position: absolute;
 }
 
@@ -59,7 +59,7 @@
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #4AA15A;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -210,7 +210,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #106835;
 }
 
 .text {
@@ -227,7 +227,7 @@ textarea.input {
 }
 
 .information i {
-  color: #1abc9c;
+  color: #106835;
 }
 
 .icon {
@@ -281,7 +281,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  background: linear-gradient(to bottom, #4AA15A, #7CC475 );
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
