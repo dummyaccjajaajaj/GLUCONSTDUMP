@@ -41,4 +41,11 @@ try {
 } catch (Exception $e) {
     http_response_code(500); // Internal Server Error status code
 }
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+    
+
 ?>
