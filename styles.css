@@ -302,7 +302,7 @@ section {
  left: 0;
  width: 100%;
  height: 100%;
- background-color: rgba(0, 0, 0, 0.3);
+ background-color: rgba(0, 0, 0, 0.45);
 }
 
 /* HOMEPAGE OVERLAY IMAGE */
@@ -417,7 +417,7 @@ section {
  position: relative;
  overflow: hidden;
  padding: 0;
- background: url('backgroundImgs/servicesbg.png');
+ background: url('backgroundImgs/svc1.png');
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
@@ -595,7 +595,7 @@ section {
  position: relative;
  overflow: hidden;
  padding: 0;
-  background: url("backgroundImgs/projectbg.png");
+  background: url("backgroundImgs/svc2.png");
 
 
 /*
