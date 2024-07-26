@@ -21,13 +21,13 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com'; // SMTP server address
     $mail->SMTPAuth   = true;
-    $mail->Username   = getenv('dacc06404@gmail.com'); // SMTP username
-    $mail->Password   = getenv('bhahvdgrxerbowmv'); // SMTP password
+    $mail->Username   = getenv('SMTP_USERNAME'); // SMTP username
+    $mail->Password   = getenv('SMTP_PASSWORD'); // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587; // TCP port to connect to
 
     // Recipients
-    $mail->setFrom(getenv('dacc06404@gmail.com'), 'Contact Form');
+    $mail->setFrom(getenv('SMTP_USERNAME'), 'Contact Form');
     $mail->addAddress('kenkenu758@gmail.com', 'Recipient Name');
 
     // Content
