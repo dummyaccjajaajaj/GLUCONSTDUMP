@@ -36,7 +36,7 @@ try {
     $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
     $mail->send();
-    http_response_code(200);
+    http_response_code(405);
 } catch (Exception $e) {
     http_response_code(500);
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
