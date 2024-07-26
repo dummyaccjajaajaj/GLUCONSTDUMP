@@ -41,4 +41,12 @@ try {
     http_response_code(500);
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
+    echo 'SMTP_USERNAME: ' . getenv('SMTP_USERNAME') . '<br>';
+echo 'SMTP_PASSWORD: ' . getenv('SMTP_PASSWORD') . '<br>';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+
+    
 ?>
