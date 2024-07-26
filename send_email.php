@@ -27,8 +27,8 @@ try {
     $mail->Port       = 587; // TCP port to connect to
 
     // Recipients
-    $mail->setFrom(getenv('EMAIL_USERNAME'), 'Contact Form');
-    $mail->addAddress('recipient-email@gmail.com', 'Recipient Name');
+    $mail->setFrom(getenv('dacc06404@gmail.com'), 'Contact Form');
+    $mail->addAddress('kenkenu758@gmail.com', 'Recipient Name');
 
     // Content
     $mail->isHTML(false);
