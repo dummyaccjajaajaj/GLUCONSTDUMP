@@ -7,11 +7,17 @@ require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Get form data
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
+
+echo 'SMTP_USERNAME: ' . getenv('SMTP_USERNAME') . '<br>';
+echo 'SMTP_PASSWORD: ' . getenv('SMTP_PASSWORD') . '<br>';
 
 // Create a PHPMailer instance
 $mail = new PHPMailer(true);
@@ -42,10 +48,8 @@ try {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
-    echo 'SMTP_USERNAME: ' . getenv('SMTP_USERNAME') . '<br>';
-echo 'SMTP_PASSWORD: ' . getenv('SMTP_PASSWORD') . '<br>';
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
+
 
 
     
