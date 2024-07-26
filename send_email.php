@@ -21,13 +21,13 @@ try {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'dacc06404@gmail.com'; // SMTP username
-        $mail->Password   = 'bhahvdgrxerbowmv'; // SMTP password
+        $mail->Username   = 'SMTP_USERNAME'; // SMTP username
+        $mail->Password   = 'SMTP_PASSWORD'; // SMTP password
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
         $mail->Port       = 587; // TCP port to connect to
 
     // Recipients
-    $mail->setFrom('dacc06404@gmail.com', '');
+    $mail->setFrom('SMTP_USERNAME', '');
     $mail->addAddress('kenkenu758@gmail.com', ''); // Add a recipient
 
     // Content
