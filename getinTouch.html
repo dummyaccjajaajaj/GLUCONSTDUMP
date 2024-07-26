@@ -185,7 +185,7 @@
 
         // Send form data via AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'send_email.php', true);
+        xhr.open('POST', 'send_email.php', true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 var notification = document.getElementById('message-notification');
