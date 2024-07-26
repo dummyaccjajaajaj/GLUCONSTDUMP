@@ -18,27 +18,27 @@ $mail = new PHPMailer(true);
 
 try {
     // Server settings
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com'; // SMTP server address
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'dacc06404@gmail.com'; // SMTP username
-        $mail->Password   = 'bhahvdgrxerbowmv'; // SMTP password
-        $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
-        $mail->Port       = 587; // TCP port to connect to
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com'; // SMTP server address
+    $mail->SMTPAuth   = true;
+    $mail->Username   = getenv('dacc06404@gmail.com'); // SMTP username
+    $mail->Password   = getenv('bhahvdgrxerbowmv'); // SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587; // TCP port to connect to
 
     // Recipients
-    $mail->setFrom('dacc06404@gmail.com', '');
-    $mail->addAddress('kenkenu758@gmail.com', ''); // Add a recipient
+    $mail->setFrom(getenv('EMAIL_USERNAME'), 'Contact Form');
+    $mail->addAddress('recipient-email@gmail.com', 'Recipient Name');
 
     // Content
-    $mail->isHTML(false); // Set email format to HTML
+    $mail->isHTML(false);
     $mail->Subject = $subject;
-    $mail->Body = "Name: $name\nEmail: $email\n\nMesage:\n $message";
+    $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
-    // Send email
     $mail->send();
-    http_response_code(200); // OK status code
+    http_response_code(200);
 } catch (Exception $e) {
-    http_response_code(500); // Internal Server Error status code
+    http_response_code(500);
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
