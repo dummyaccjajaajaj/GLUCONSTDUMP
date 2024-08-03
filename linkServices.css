@@ -611,8 +611,8 @@ a:is(:hover, :focus) figcaption {
  white-space: nowrap;
  left: 50%;
  transform: translate(-50%, -50%);
- background-color: transparent;
- color: black;
+ background-color: #116736;
+ color: white;
  transition: background-color 0.3s, color 0.3s;
  cursor: pointer;
  padding: 10px 20px;
@@ -620,14 +620,14 @@ a:is(:hover, :focus) figcaption {
  font-size: 0.8rem;
  font-family: "Raleway", sans-serif;
  font-weight: normal;
- border: solid 2px #12372a;
+ border: solid 2px white;
  font-size: 0.8rem;
 }
 
 .backbtn:hover {
- background-color: #116736;
- color: white;
- border: solid 2px white;
+ background-color: transparent;
+ color: #116736;
+ border: solid 2px #116736;
  transition: 0.3s ease;
 }
 
