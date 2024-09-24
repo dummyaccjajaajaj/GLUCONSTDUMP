@@ -510,6 +510,7 @@ nav.stroke ul li a:hover:after {
  aspect-ratio: 1 / 1;
  object-fit: cover;
  transition: transform 1000ms;
+  border-radius: 5px;
 }
 
 .nav-ulz {
@@ -622,6 +623,7 @@ a:is(:hover, :focus) figcaption {
  font-weight: normal;
  border: solid 2px white;
  font-size: 0.8rem;
+  border-radius: 5px;
 }
 
 .backbtn:hover {
@@ -653,6 +655,7 @@ a:is(:hover, :focus) figcaption {
  height: 400px;
  display: block;
  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .materialsVideocont-constmgmt {
@@ -685,7 +688,7 @@ a:is(:hover, :focus) figcaption {
 }
 
 .box {
-  width: 70%; /* Width of the boxes */
+  width: 50%; /* Width of the boxes */
   height: 40%; /* Height of the boxes */
   margin: 0 50px; /* Spacing between the boxes */
   padding: 20px;
@@ -714,6 +717,12 @@ a:is(:hover, :focus) figcaption {
   color: black; 
   text-align: left;
 
+}
+
+.horizMisVis1, .horizMisVis2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .box h1{
@@ -1128,6 +1137,23 @@ footer .copyright {
  .nav-ulz {
   margin-top: 200px;
  }
+
+
+
+                                                                                                /* MISSION VISION */
+
+
+ .horizMisVis1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .horizMisVis2{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
 
                                                                                                 /* LET'S CONNECT */
 

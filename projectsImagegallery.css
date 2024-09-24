@@ -15,7 +15,7 @@
         }
         .gallery img {
             max-width: 350px; /* Adjust the width of the images */
-          
+             border-radius: 5px;
             height: 280px;
             margin: 10px; /* Adjust spacing between images */
             cursor: pointer;

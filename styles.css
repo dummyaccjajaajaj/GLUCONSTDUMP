@@ -386,6 +386,7 @@ section {
  font-weight: normal;
  border: solid 2px white;
  z-index: 1000;
+ border-radius: 5px;
 }
 
 .email-button:hover {
@@ -494,11 +495,13 @@ section {
  text-align: center;
  white-space: pre-line;
  background-color: white;
+ border-radius: 10px;
 }
 
 .photo:hover{
   transition: 0.5s;
   border: 1.5px solid white;
+  
 }
 
 .hover-text {
@@ -542,12 +545,14 @@ section {
  font-family: "Raleway", sans-serif;
  font-weight: normal;
  border: solid 2px white;
+  border-radius: 5px;
 }
 
 .knowmore-button:hover {
  background-color: #116736;
  color: white;
  transition: 0.3s ease;
+  border-radius: 5px;
 }
 
                                                                                               /* COMPANY HIGHLIGHTS */
@@ -639,6 +644,7 @@ section {
  aspect-ratio: 1 / 1;
  object-fit: cover;
  transition: transform 1000ms;
+  border-radius: 5px;
 }
 
 .nav-ulz {
@@ -765,6 +771,7 @@ a:is(:hover, :focus) figcaption {
  font-weight: normal;
  border: solid 2px white;
  font-size: 0.8rem;
+ border-radius: 5px;
 }
 
 .see-morebutton:hover {
@@ -852,6 +859,7 @@ a:is(:hover, :focus) figcaption {
  border: solid 2px white;
  font-size: 0.8rem;
  z-index: 1000;
+  border-radius: 5px;
 }
 
 .learnmore-button:hover {
@@ -921,6 +929,7 @@ a:is(:hover, :focus) figcaption {
  border: solid 2px white;
  font-size: 0.8rem;
  margin-top: 5%;
+  border-radius: 5px;
 }
 
 .letsConnectBTN:hover {
