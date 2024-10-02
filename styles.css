@@ -1158,6 +1158,10 @@ footer .copyright {
   display: none;
  }
 
+  .contactDetails{
+    height: 5vh;
+  }
+
  .logoname {
   display: flex;
   justify-content: flex-start;
