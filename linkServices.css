@@ -781,16 +781,15 @@ a:is(:hover, :focus) figcaption {
 }
 
 .contactDetails h3 {
- display: flex;
- color: #12372a;
- font-size: 1.3rem;
- font-family: "Raleway", sans-serif;
- white-space: nowrap;
- font-weight: 600;
- padding-bottom: 14px;
- width: 200px;
- justify-content: space-evenly;
- text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  color: #12372a;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+  font-weight: 800;
+  justify-content: space-evenly;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .name {
@@ -964,10 +963,6 @@ footer .copyright {
     background-color: #4AA15A; 
     border: 3px solid #4AA15A; 
 }
-
-
-
-
 
 
 
