@@ -14,7 +14,7 @@
             { index: 10, src: 'projects/DR_CHIU_BLDG_SILLIMAN.webp', name: 'DR CHIU BLDG- SILLIMAN' },
 
             { index: 11, src: 'projects/EBAO_BLDG_Ma_Cristina_St.webp', name: 'EBAO BLDG- Ma Cristina St.' },
-            { index: 12, src: 'projects/FORMER_AVON_BLDG_Sta_Catalina_San_Jose_St.webp', name: 'FORMER AVON BLDG- Sta Catalina- San Jose St.' },
+            { index: 12, src: 'projects/FORMER_AVON_BLDG_Sta_Catalina_San_Jose_St.webp', name: 'Former Avon Bldg.-Sta Catalina-San Jose St.' },
             { index: 13, src: 'projects/FORMER_EQUITABLE_BANK_STA_ROSA_ST.webp', name: 'FORMER EQUITABLE BANK- STA ROSA ST.' },
             { index: 14, src: 'projects/UMEE_PARKING_SAN_JOSE_STA_CATALINA_ST.webp', name: 'UMEE PARKING- SAN JOSE- STA CATALINA ST.' },
             { index: 15, src: 'projects/FRANCISCA_BLDG_Bantayan.webp', name: 'FRANCISCA BLDG- Bantayan' },
