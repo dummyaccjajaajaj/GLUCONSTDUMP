@@ -19,16 +19,16 @@ $mail = new PHPMailer(true);
 try {
     // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com'; // SMTP server address 
+        $mail->Host       = 'som'; // SMTP server address 
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'dacc06404@gmail.com'; // SMTP username
-        $mail->Password   = 'bhahvdgrxerbowmv'; // SMTP password
-        $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
-        $mail->Port       = 587; // TCP port to connect to
+        $mail->Username   = '.com'; // SMTP username
+        $mail->Password   = ''; // SMTP password
+        $mail->SMTPSecure = 'ts'; // Enable TLS encryption, `ssl` also accepted
+        $mail->Port       = 5; // TCP port to connect to
 
     // Recipients
-    $mail->setFrom('dacc06404@gmail.com', '');
-    $mail->addAddress('kenkenu758@gmail.com', ''); // Add a recipient
+    $mail->setFrom('dal.com', '');
+    $mail->addAddress('kenkm', ''); // Add a recipient
 
     // Content
     $mail->isHTML(false); // Set email format to HTML
