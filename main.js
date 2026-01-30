@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //UNDER SERVICE HIGHLIGHTS COUNTING 
 //HIGHLIGHTS COUNT 1
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function() {    
     var section2 = document.getElementById('highlights');
     var countingElement = document.getElementById('countingA');
     var section2Top = section2.getBoundingClientRect().top;
@@ -199,37 +199,49 @@ function animateCounting(start, end, element) {
 
 
 //BACK TO TOP BUTTON
-    // Get the back to top button element
-    var backToTopButton = document.getElementById("back-to-top");
+   // Get the back to top button element
+    const backToTopButton = document.getElementById("back-to-top");
 
-    // Function to control the visibility of the back to top button based on scroll position
-    window.onscroll = function() {
-        var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-        var section4Bottom = document.getElementById("clear").offsetTop + document.getElementById("clear").offsetHeight;
-        if (currentPosition > (document.getElementById("services").offsetTop - (window.innerHeight / 2)) && currentPosition < section4Bottom - window.innerHeight) {
-            backToTopButton.style.right = "5px"; // Show the button by moving it to the right
-            backToTopButton.style.opacity = "0.5"; // Set opacity to initial value
-        } else {
-            backToTopButton.style.right = "-70px"; // Hide the button by moving it off the screen
-            backToTopButton.style.opacity = "0"; // Set opacity to 0 when hidden
+    // We store these elements outside the function so the browser 
+    // doesn't have to "find" them 100 times per second while scrolling.
+    const servicesSection = document.getElementById("services");
+    const clearSection = document.getElementById("clear");
+
+    // Function to control the visibility of the back to top button
+    window.addEventListener('scroll', function() {
+        const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Safety check: make sure elements exist before calculating offset
+        if (servicesSection && clearSection) {
+            const section4Bottom = clearSection.offsetTop + clearSection.offsetHeight;
+            const triggerPoint = servicesSection.offsetTop - (window.innerHeight / 2);
+
+            // Visibility Logic
+            if (currentPosition > triggerPoint && currentPosition < (section4Bottom - window.innerHeight)) {
+                backToTopButton.style.right = "5px";
+                backToTopButton.style.opacity = "0.5";
+            } else {
+                backToTopButton.style.right = "-70px";
+                backToTopButton.style.opacity = "0";
+            }
         }
 
-        // If scrolling up and button was clicked, remove styles
-        if (currentPosition === 0) {
+        // Hide button if we are at the very top
+        if (currentPosition <= 0) {
             backToTopButton.style.opacity = "0";
         }
-    };
+    });
 
-    // Function to scroll to the top of the page when the back to top button is clicked
+    // Improved Scroll Function
     function scrollToTop() {
-        var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentPosition > 0) {
-            window.requestAnimationFrame(scrollToTop);
-            window.scrollTo(0, currentPosition - currentPosition / 8);
-        }
-        // Remove the styles after clicking
-        backToTopButton.style.opacity = "0";
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // This replaces the loop and allows user to override
+        });
     }
+
+// Attach the click event via JavaScript (cleaner than using onclick in HTML)
+backToTopButton.addEventListener('click', scrollToTop);
 
 //NAVIGATION APPEAR DISAPPEAR
 let lastScrollTop = 0;
